@@ -11,8 +11,8 @@ const CardVideo = ({ video }: CardVideoProps) => {
             <div className="">
                 <div className="relative text-center rounded-sm overflow-hidden mb-2">
                     <Link
-                        title={`Truyện tranh ${video?.title}`}
-                        href={`/truyen/${video?.slug}-${video?.videoId}`}
+                        title={`Phim ${video?.title}`}
+                        href={`/phim/${video?.slug}-${video?.videoId}`}
                     >
                         <div className="relative [&>div]:hover:opacity-100 [&>div]:hover:bg-black/30 [&>div>div]:hover:scale-100">
                             <span className="absolute top-2 left-2 text-sm font-semibold bg-green-600 rounded-sm px-2">9.4</span>
@@ -28,7 +28,7 @@ const CardVideo = ({ video }: CardVideoProps) => {
                                 loading="lazy"
                                 key={`${video?.videoId}`}
                                 src={`${video?.thumbnail}`}
-                                alt={`Anime ${video?.title}`}
+                                alt={`Phim ${video?.title}`}
                                 className="w-full h-full transition-all rounded-xl object-cover bg-gray-500 align-middle"
                             />
                         </div>
@@ -36,7 +36,7 @@ const CardVideo = ({ video }: CardVideoProps) => {
                 </div>
                 <div className="">
                     <Link
-                        href={`/truyen/${video?.slug}-${video?.videoId}`}
+                        href={`/phim/${video?.slug}-${video?.videoId}`}
                         title={video?.title}
                     >
                         <h3 className="text-base line-clamp-2 font-semibold">

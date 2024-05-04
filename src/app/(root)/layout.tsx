@@ -1,3 +1,4 @@
+import ListEpisode from "@/components/modules/MovieTemplate/ListEpisode";
 
 export default function Layout({
     children,
@@ -6,7 +7,7 @@ export default function Layout({
 }>) {
     return (
         <main>
-            <div className="max-w-7xl w-full mx-auto">{children}</div>
+            {children}
         </main>
     );
 }
